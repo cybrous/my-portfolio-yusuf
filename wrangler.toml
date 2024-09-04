@@ -79,7 +79,7 @@ mode = "smart"
 
 ######## PRODUCTION environment config ########
 
-# [env.production.vars]
+[env.production.vars]
 # API_KEY = "abc123"
 RESEND_API_KEY=re_K4AEcnN7_PRrM6ietCKsXK58zwkkDn5QM
 # [[env.production.kv_namespaces]]
