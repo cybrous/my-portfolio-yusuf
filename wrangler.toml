@@ -81,7 +81,7 @@ mode = "smart"
 
 [env.production.vars]
 # API_KEY = "abc123"
-RESEND_API_KEY="re_K4AEcnN7_PRrM6ietCKsXK58zwkkDn5QM"
+
 # [[env.production.kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
 # id = "<PRODUCTION_NAMESPACE_ID>"
