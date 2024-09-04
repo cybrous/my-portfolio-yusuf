@@ -122,7 +122,8 @@ export default function Intro() {
           target="_blank"
         >
           <FaYoutubeSquare />
-        </a>
+</a>
+
       </motion.div>
     </section>
   );
