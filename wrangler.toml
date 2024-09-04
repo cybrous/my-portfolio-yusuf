@@ -9,7 +9,7 @@ pages_build_output_dir = ".vercel/output/static"
 # rather than the end user may result in better performance.
 # Docs: https://developers.cloudflare.com/pages/functions/smart-placement/#smart-placement
 # [placement]
-# mode = "smart"
+mode = "smart"
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Docs:
@@ -81,7 +81,7 @@ pages_build_output_dir = ".vercel/output/static"
 
 # [env.production.vars]
 # API_KEY = "abc123"
-
+RESEND_API_KEY=re_K4AEcnN7_PRrM6ietCKsXK58zwkkDn5QM
 # [[env.production.kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
 # id = "<PRODUCTION_NAMESPACE_ID>"
