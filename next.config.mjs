@@ -27,6 +27,10 @@ const nextConfig = {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable', // Customize as needed
           },
+          {
+            key: 'X-Robots-Tag',
+            value: 'index, follow', // Allow indexing
+          },
         ],
       },
     ];
