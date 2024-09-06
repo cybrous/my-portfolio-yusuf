@@ -3,8 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
+import amazonImg from "@/public/amazon.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import portfolioImg from "@/public/portfolio.png";
 
 export const links = [
   {
@@ -66,7 +67,7 @@ export const projectsData = [
     description:
       "Built a portfolio website using TypeScript, CSS, JavaScript, and Next.js, deployed on Cloudflare Pages. Offered a sleek, responsive design with dynamic features to effectively showcase my projects and skills.",
     tags: ["Typescript", "CSS", "Javascript","Next.js"],
-    imageUrl: corpcommentImg,
+    imageUrl: portfolioImg,
   },
   {
     title: "Chemmentor.com",
@@ -80,7 +81,7 @@ export const projectsData = [
     description:
       "Built a fully responsive 100% replica of an Amazon e-commerce site using HTML and CSS, closely matching the original design and functionality.",
     tags: ["Html", "CSS", "Javascript"],
-    imageUrl: corpcommentImg,
+    imageUrl: amazonImg,
   },
   {
     title: "E-Catering",

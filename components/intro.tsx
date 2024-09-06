@@ -33,7 +33,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://yunus-home.github.io/mirrorb.github.io/images/pic.jpeg"
+              src="https://yunus-home.github.io/mirrorb.github.io/images/picture.webp"
               alt="Yusuf portrait"
               width="192"
               height="192"

@@ -7,14 +7,13 @@ import ContactFormEmail from "@/email/contact-form-email";
 import { Heading } from "@react-email/components";
 import { Tailwind } from "@react-email/tailwind";
 
-
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
 
-  // simple server-side validation
+  // Simple server-side validation
   if (!validateString(senderEmail, 500)) {
     return {
       error: "Invalid sender email",
@@ -30,8 +29,8 @@ export const sendEmail = async (formData: FormData) => {
   try {
     data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
-      to: "cybrous@gmail.com",
-      subject: "Message from contact form",
+      to: "admin@yunus.eu.org",
+      subject: "Message from Portfolio Website",
       replyTo: senderEmail,
       react: React.createElement(ContactFormEmail, {
         message: message,
