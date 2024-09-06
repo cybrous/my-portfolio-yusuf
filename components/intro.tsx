@@ -6,9 +6,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare, FaYoutubeSquare } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+
+import { FaYoutubeSquare } from 'react-icons/fa';
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -31,14 +33,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://yunus-home.github.io/mirrorb.github.io/images/picture-192w.webp"
+              src="https://yunus-home.github.io/mirrorb.github.io/images/picture.webp"
               alt="Yusuf portrait"
-              width={192}
-              height={192}
-              quality={95}
+              width="192"
+              height="192"
+              quality="95"
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-              sizes="(max-width: 192px) 100vw, 192px"
             />
           </motion.div>
 
@@ -121,7 +122,8 @@ export default function Intro() {
           target="_blank"
         >
           <FaYoutubeSquare />
-        </a>
+</a>
+
       </motion.div>
     </section>
   );
