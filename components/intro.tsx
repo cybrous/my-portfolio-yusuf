@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare, FaYoutubeSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import pictureImg from "@/public/picture.webp"
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -31,7 +32,8 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://yunus-home.github.io/mirrorb.github.io/images/picture.webp"
+              //src="https://yunus-home.github.io/mirrorb.github.io/images/picture.webp"
+              src={pictureImg}
               alt="Yusuf portrait"
               width={192}
               height={192}
