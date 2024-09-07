@@ -82,7 +82,7 @@ export default function Project({
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <div className="relative bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
-          <button className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-100">Close</button>
+          <button className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-100" onClick={() => setIsModalOpen(false)}>Close</button>
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
@@ -102,7 +102,7 @@ export default function Project({
               src={imageUrl}
               alt="Project I worked on"
               quality={95}
-              className={`mt-4 rounded-lg shadow-2xl ${isModalOpen ? 'w-1/4' : 'w-full'}`}
+              className={`mt-4 rounded-lg shadow-2xl ${isModalOpen ? 'w-24 h-24' : 'w-full'}`}
             />
           )}
           <a href={linkUrl} className="mt-4 text-blue-500 underline">
