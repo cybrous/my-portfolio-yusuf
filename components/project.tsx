@@ -105,7 +105,7 @@ export default function Project({
                   alt="Project I worked on"
                   quality={95}
                   width={300} // Add width
-                  height={150} // Add height
+                  height={200} // Add height
                 className="mt-4 rounded-lg shadow-2xl w-30 h-30"
               />
               </div>
