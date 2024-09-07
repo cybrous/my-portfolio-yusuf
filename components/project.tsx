@@ -35,7 +35,7 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 max-w-[50rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 flex justify-center items-center">
+      <section className="bg-gray-100 max-w-[50rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[60%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
@@ -60,25 +60,25 @@ export default function Project({
         </div>
 
         {imageUrl && (
-          <div className="flex justify-center items-center">
-            <Image
-              src={imageUrl}
-              alt="Project I worked on"
-              quality={100}
-              width={450} // Add width
-              height={300} // Add height
-              className="rounded-t-lg shadow-2xl
-              transition 
-              group-hover:scale-[1.04]
-              group-hover:-translate-x-3
-              group-hover:translate-y-3
-              group-hover:-rotate-2
+          <Image
+            src={imageUrl}
+            alt="Project I worked on"
+            quality={95}
+            width={450} // Add width
+            height={300} // Add height
+            className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+            transition 
+            group-hover:scale-[1.04]
+            group-hover:-translate-x-3
+            group-hover:translate-y-3
+            group-hover:-rotate-2
 
-              group-even:group-hover:translate-x-3
-              group-even:group-hover:translate-y-3
-              group-even:group-hover:rotate-2"
-            />
-          </div>
+            group-even:group-hover:translate-x-3
+            group-even:group-hover:translate-y-3
+            group-even:group-hover:rotate-2
+
+            group-even:right-[initial] group-even:-left-40"
+          />
         )}
       </section>
 
@@ -102,7 +102,7 @@ export default function Project({
             <Image
               src={imageUrl}
               alt="Project I worked on"
-              quality={100}
+              quality={95}
               width={250} // Add width
               height={120} // Add height
               className="mt-4 rounded-lg shadow-2xl w-30 h-30"
