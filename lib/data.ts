@@ -74,6 +74,7 @@ export const projectsData = [
     description:
       "Launched Chemmentor.com on WordPress with 50+ quizzes and 100+ educational pieces, increasing user engagement by 30% and enhancing student performance.",
     tags: ["WORDPRESS","NAMECHEAP Hosting"],
+    imageUrl: ,
   },
   {
     title: "Amazon E-Commerce Website Replication Initiative",
@@ -94,6 +95,7 @@ export const projectsData = [
     description:
       "Implemented features such as appointment scheduling and staff management, which resulted in operational efficiency and decrease response to patient inquiries 20% faster.",
     tags: ["Java", "OOPS"],
+    imageUrl: ,
   },
 ] as const;
 
