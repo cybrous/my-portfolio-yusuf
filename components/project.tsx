@@ -102,7 +102,7 @@ export default function Project({
               src={imageUrl}
               alt="Project I worked on"
               quality={95}
-              className={`mt-4 rounded-lg shadow-2xl ${isModalOpen ? 'w-1/2' : 'w-full'}`}
+              className={`mt-4 rounded-lg shadow-2xl ${isModalOpen ? 'w-1/4' : 'w-full'}`}
             />
           )}
           <a href={linkUrl} className="mt-4 text-blue-500 underline">
