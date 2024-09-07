@@ -83,7 +83,7 @@ export default function Project({
       </section>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <div className="relative bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg" style={{ width: '750px', height: '500px' }}>
+        <div className="relative bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg" style={{ width: '750px', height: '490px' }}>
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
