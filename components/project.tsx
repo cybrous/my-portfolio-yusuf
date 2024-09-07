@@ -81,31 +81,34 @@ export default function Project({
       </section>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <h3 className="text-2xl font-semibold">{title}</h3>
-        <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-          {description}
-        </p>
-        <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-          {tags.map((tag, index) => (
-            <li
-              className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-              key={index}
-            >
-              {tag}
-            </li>
-          ))}
-        </ul>
-        {imageUrl && (
-          <Image
-            src={imageUrl}
-            alt="Project I worked on"
-            quality={95}
-            className="mt-4 w-full rounded-lg shadow-2xl"
-          />
-        )}
-        <a href={linkUrl} className="mt-4 text-blue-500 underline">
-          Learn more
-        </a>
+        <div className="relative bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+          <button className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-100">Close</button>
+          <h3 className="text-2xl font-semibold">{title}</h3>
+          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+            {description}
+          </p>
+          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+            {tags.map((tag, index) => (
+              <li
+                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                key={index}
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
+          {imageUrl && (
+            <Image
+              src={imageUrl}
+              alt="Project I worked on"
+              quality={95}
+              className="mt-4 w-full rounded-lg shadow-2xl"
+            />
+          )}
+          <a href={linkUrl} className="mt-4 text-blue-500 underline">
+            Learn more
+          </a>
+        </div>
       </Modal>
     </motion.div>
   );
