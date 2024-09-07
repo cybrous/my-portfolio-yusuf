@@ -60,25 +60,16 @@ export default function Project({
         </div>
 
         {imageUrl && (
-          <Image
-            src={imageUrl}
-            alt="Project I worked on"
-            quality={95}
-            width={450} // Add width
-            height={300} // Add height
-            className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-            transition 
-            group-hover:scale-[1.04]
-            group-hover:-translate-x-3
-            group-hover:translate-y-3
-            group-hover:-rotate-2
-
-            group-even:group-hover:translate-x-3
-            group-even:group-hover:translate-y-3
-            group-even:group-hover:rotate-2
-
-            group-even:right-[initial] group-even:-left-40"
-          />
+          <div className="flex justify-center items-center">
+            <Image
+              src={imageUrl}
+              alt="Project I worked on"
+              quality={95}
+              width={250} // Add width
+              height={120} // Add height
+              className="mt-4 rounded-lg shadow-2xl w-30 h-30"
+            />
+          </div>
         )}
       </section>
 
@@ -99,14 +90,16 @@ export default function Project({
             ))}
           </ul>
           {imageUrl && (
-            <Image
-              src={imageUrl}
-              alt="Project I worked on"
-              quality={95}
-              width={250} // Add width
-              height={120} // Add height
-              className="mt-4 rounded-lg shadow-2xl w-30 h-30"
-            />
+            <div className="flex justify-center items-center">
+              <Image
+                src={imageUrl}
+                alt="Project I worked on"
+                quality={95}
+                width={450} // Add width
+                height={300} // Add height
+                className="mt-4 rounded-lg shadow-2xl w-30 h-30"
+              />
+            </div>
           )}
           <a href={linkUrl} className="mt-4 text-blue-500 underline">
             Learn more
