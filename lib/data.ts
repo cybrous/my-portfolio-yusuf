@@ -63,39 +63,49 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    id: 1,
     title: "Portfolio Website",
     description:
       "Built a portfolio website using TypeScript, CSS, JavaScript, and Next.js, deployed on Cloudflare Pages. Offered a sleek, responsive design with dynamic features to effectively showcase my projects and skills.",
     tags: ["Typescript", "CSS", "Javascript","Next.js"],
     imageUrl: portfolioImg,
+    linkUrl: "https://cybrous.eu.org",
   },
   {
+    id: 2,
     title: "Chemmentor.com",
     description:
       "Launched Chemmentor.com on WordPress with 50+ quizzes and 100+ educational pieces, increasing user engagement by 30% and enhancing student performance.",
     tags: ["WORDPRESS","NAMECHEAP Hosting"],
     imageUrl: null,
+    linkUrl: "https://chemmentor.in",
   },
   {
+    id: 3,
     title: "Amazon E-Commerce Website Replication Initiative",
     description:
       "Built a fully responsive 100% replica of an Amazon e-commerce site using HTML and CSS, closely matching the original design and functionality.",
     tags: ["Html", "CSS", "Javascript"],
     imageUrl: amazonImg,
+    linkUrl: "https://cybrous.github.io/amazon_clone/",
   },
   {
+    id: 4,
     title: "E-Catering",
     description:
       "Created a responsive catering management portal using HTML, CSS, JavaScript, and Django. The secure backend and API integration boosted operational efficiency by 25% and cut processing times by 40%.",
     tags: ["Html","CSS","Javascript","Django"],
     imageUrl: ecateringImg,
+    linkUrl: "https://github.com/cybrous/royalevent",
   },
   {
+    id: 5,
     title: "Hospital Management System",
     description:
       "Implemented features such as appointment scheduling and staff management, which resulted in operational efficiency and decrease response to patient inquiries 20% faster.",
     tags: ["Java", "OOPS"],
     imageUrl: null,
+    linkUrl: "https://github.com/cybrous/HospitalManagment",
   },
 ] as const;
 

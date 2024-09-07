@@ -1,17 +1,20 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Modal from "@/components/Modal";
 
 type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
+  id,
   title,
   description,
   tags,
   imageUrl,
+  linkUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -20,6 +23,8 @@ export default function Project({
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <motion.div
@@ -46,6 +51,12 @@ export default function Project({
               </li>
             ))}
           </ul>
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
+          >
+            View Details
+          </button>
         </div>
 
         {imageUrl && (
@@ -68,6 +79,34 @@ export default function Project({
           />
         )}
       </section>
+
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        <h3 className="text-2xl font-semibold">{title}</h3>
+        <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+          {description}
+        </p>
+        <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+          {tags.map((tag, index) => (
+            <li
+              className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+              key={index}
+            >
+              {tag}
+            </li>
+          ))}
+        </ul>
+        {imageUrl && (
+          <Image
+            src={imageUrl}
+            alt="Project I worked on"
+            quality={95}
+            className="mt-4 w-full rounded-lg shadow-2xl"
+          />
+        )}
+        <a href={linkUrl} className="mt-4 text-blue-500 underline">
+          Learn more
+        </a>
+      </Modal>
     </motion.div>
   );
 }
