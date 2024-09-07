@@ -83,8 +83,8 @@ export default function Project({
       </section>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <div className="relative bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg" style={{ width: '450px', height: '200px' }}>
-          <button className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-100" onClick={() => setIsModalOpen(true)}>Close</button>
+        <div className="relative bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg" style={{ width: '500px', height: '300px' }}>
+          <button className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-100" onClick={() => setIsModalOpen(false)}>Close</button>
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
