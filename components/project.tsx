@@ -21,8 +21,8 @@ export default function Project({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -30,8 +30,8 @@ export default function Project({
     <motion.div
       ref={ref}
       style={{
-        scale: scaleProgess,
-        opacity: opacityProgess,
+        scale: scaleProgress,
+        opacity: opacityProgress,
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
@@ -81,7 +81,7 @@ export default function Project({
       </section>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <div className="relative bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+        <div className="relative bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg" style={{ width: '300px', height: '200px' }}>
           <button className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-100" onClick={() => setIsModalOpen(false)}>Close</button>
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
@@ -102,7 +102,7 @@ export default function Project({
               src={imageUrl}
               alt="Project I worked on"
               quality={95}
-              className={`mt-4 rounded-lg shadow-2xl ${isModalOpen ? 'w-24 h-24' : 'w-full'}`}
+              className="mt-4 rounded-lg shadow-2xl w-30 h-30"
             />
           )}
           <a href={linkUrl} className="mt-4 text-blue-500 underline">
