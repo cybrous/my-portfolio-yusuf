@@ -64,6 +64,8 @@ export default function Project({
             src={imageUrl}
             alt="Project I worked on"
             quality={95}
+            width={450} // Add width
+            height={300} // Add height
             className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
             transition 
             group-hover:scale-[1.04]
@@ -102,6 +104,8 @@ export default function Project({
               src={imageUrl}
               alt="Project I worked on"
               quality={95}
+              width={120} // Add width
+              height={120} // Add height
               className="mt-4 rounded-lg shadow-2xl w-30 h-30"
             />
           )}
