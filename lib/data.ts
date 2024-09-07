@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import amazonImg from "@/public/amazon.png";
 import portfolioImg from "@/public/portfolio.png";
+import ecateringImg from "@/public/e-catering.jpeg";
 
 export const links = [
   {
@@ -86,7 +87,7 @@ export const projectsData = [
     description:
       "Created a responsive catering management portal using HTML, CSS, JavaScript, and Django. The secure backend and API integration boosted operational efficiency by 25% and cut processing times by 40%.",
     tags: ["Html","CSS","Javascript","Django"],
-    imageUrl: corpcommentImg,
+    imageUrl: ecateringImg,
   },
   {
     title: "Hospital Management System",
