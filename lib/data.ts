@@ -69,6 +69,13 @@ export const projectsData = [
     imageUrl: portfolioImg,
   },
   {
+    title: "Full Stack CRUD Application",
+    description:
+      "Developed a full-stack CRUD app with SpringBoot, MySQL, & React Hooks, featuring RESTFul APIs, Seamless front-end integration via Axios, & efficient data handling and testing using postman.",
+    tags: ["MySQL", "SpringBoot" , "React.js" , "Axios"],
+    imageUrl: corpcommentImg,
+  },
+  {
     title: "Chemmentor.com",
     description:
       "Launched Chemmentor.com on WordPress with 50+ quizzes and 100+ educational pieces, increasing user engagement by 30% and enhancing student performance.",
